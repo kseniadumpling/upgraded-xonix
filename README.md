@@ -2,7 +2,7 @@
 
 All the things that you need to add to your page are written in the `widget.html`
 
-Project are based on [p5.js library](https://p5js.org) and the game itself was written by this guy: https://github.com/madmaxeatfax/xonix .
+Project is based on [p5.js library](https://p5js.org) and the game itself was written by this guy: https://github.com/madmaxeatfax/xonix .
 Should say that code is not perfect and not really flexible.
 
 Main file is `sketch.js`, you can change layout there. Also look at *submitInput()* method which send a POST request, you need to handel 
