@@ -2,8 +2,8 @@
 const scl = 20;
 const indent = 2;
 const fps = 16;
-const set_timer = 3;
-const LIFE = 1;
+const set_timer = 80;
+const LIFE = 3;
 
 
 const BLACK = '#000000';
@@ -47,7 +47,7 @@ function setup() {
 	canvas.mousePressed(changeScreen);
 
 	inputNickname = createInput("Nickname");
-	inputNickname.input(myInputEvent);
+	//inputNickname.input(myInputEvent);
 	inputNickname.parent('sketch-holder');
 	inputNickname.style('display', 'none')
 	//inputNickname.addClass('form-control');
@@ -63,12 +63,6 @@ function setup() {
 	//button.addClass('btn btn-dark');
 	button.mousePressed(submitInput);
 }
-
-function myInputEvent() {
-	console.log('you are typing: ', this.value());
-			//  'вы написали: '
-  }
-
 
 function changeScreen() {
 	if (screen === 0) {
@@ -188,7 +182,6 @@ function draw() {
 		noLoop();
 	}
 }
-
 
 let counter = 0;
 function keyPressed() {
